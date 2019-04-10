@@ -2,17 +2,17 @@
 
 from flask import Flask, jsonify
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route("/")
+@applicaton.route("/")
 def home():
    return jsonify({'a': 1, 'b': 2, 'c': 3}) 
 
-@app.route("/app")
+@applicaton.route("/app")
 def apphome():
    return jsonify({'a': 4, 'b': 5, 'c': 6}) 
 
 
 if __name__ == "__main__":
-   app.run()
+   applicaton.run()
 
